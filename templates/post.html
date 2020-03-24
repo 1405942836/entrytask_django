@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>entrytask</title>
+</head>
+<body>
+    <form action="/query_account_get_test" method="get">
+        {% csrf_token %}
+        <input type="text" name="user_name">
+        <input type="text" name="product_price">
+        <input type="text" name="product_discount">
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>{{ rlt }}</p>
+</body>
+</html>

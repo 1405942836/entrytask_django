@@ -1,0 +1,4 @@
+mysqlclient
+pymysql
+gevent
+locustio
